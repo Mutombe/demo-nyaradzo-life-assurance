@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import * as Icons from '@phosphor-icons/react';
 import {
   ArrowRight,
   CheckCircle,
@@ -8,7 +7,33 @@ import {
   WhatsappLogo,
   Download,
   Clock,
+  Heart,
+  ShieldCheck,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  FolderOpen,
+  ClipboardText,
 } from '@phosphor-icons/react';
+
+const IconMap = {
+  Heart,
+  ShieldCheck,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  Phone,
+  FolderOpen,
+  ClipboardText,
+};
 
 import PageTransition from '../components/PageTransition';
 import PageHero from '../components/PageHero';
@@ -87,7 +112,7 @@ export default function Claims() {
 
           <ol className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {claimSteps.map((s, i) => {
-              const Icon = Icons[s.icon] || Icons.Phone;
+              const Icon = IconMap[s.icon] || Phone;
               return (
                 <SectionReveal
                   as="li"

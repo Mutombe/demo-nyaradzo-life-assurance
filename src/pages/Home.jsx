@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import * as Icons from '@phosphor-icons/react';
 import {
   ArrowRight,
   CaretDown,
@@ -11,7 +10,32 @@ import {
   MapPin,
   CheckCircle,
   WhatsappLogo,
+  Heart,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  FolderOpen,
+  ClipboardText,
 } from '@phosphor-icons/react';
+
+const IconMap = {
+  Heart,
+  ShieldCheck,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  Phone,
+  FolderOpen,
+  ClipboardText,
+};
 
 import PageTransition from '../components/PageTransition';
 import SectionReveal from '../components/SectionReveal';
@@ -220,7 +244,7 @@ function PillarsBand() {
 
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-cream-300" style={{ borderRadius: '2px' }}>
           {pillars.map((p, i) => {
-            const Icon = Icons[p.icon] || Icons.ShieldCheck;
+            const Icon = IconMap[p.icon] || ShieldCheck;
             return (
               <SectionReveal
                 key={p.title}
@@ -405,7 +429,7 @@ function ClaimsPromiseSection() {
 
           <div className="lg:col-span-8 grid sm:grid-cols-2 gap-5">
             {claimSteps.map((s, i) => {
-              const Icon = Icons[s.icon] || Icons.Phone;
+              const Icon = IconMap[s.icon] || Phone;
               return (
                 <SectionReveal
                   key={s.step}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import * as Icons from '@phosphor-icons/react';
 import {
   ArrowRight,
   CheckCircle,
@@ -9,7 +8,33 @@ import {
   CaretRight,
   Phone,
   WhatsappLogo,
+  Heart,
+  ShieldCheck,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  FolderOpen,
+  ClipboardText,
 } from '@phosphor-icons/react';
+
+const IconMap = {
+  Heart,
+  ShieldCheck,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  Phone,
+  FolderOpen,
+  ClipboardText,
+};
 
 import PageTransition from '../components/PageTransition';
 import SectionReveal from '../components/SectionReveal';
@@ -28,7 +53,7 @@ export default function ProductDetail() {
   const prev = products[(idx - 1 + products.length) % products.length];
   const next = products[(idx + 1) % products.length];
 
-  const Icon = Icons[product.icon] || Icons.ShieldCheck;
+  const Icon = IconMap[product.icon] || ShieldCheck;
 
   return (
     <PageTransition>
@@ -151,7 +176,7 @@ export default function ProductDetail() {
                 </h2>
                 <div className="mt-8 grid sm:grid-cols-2 gap-4">
                   {claimSteps.map((s) => {
-                    const StepIcon = Icons[s.icon] || Icons.Phone;
+                    const StepIcon = IconMap[s.icon] || Phone;
                     return (
                       <div key={s.step} className="bg-cream-50 border border-cream-200 p-5 flex gap-4">
                         <div

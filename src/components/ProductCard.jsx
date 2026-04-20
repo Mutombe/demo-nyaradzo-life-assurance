@@ -1,10 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from '@phosphor-icons/react';
-import * as Icons from '@phosphor-icons/react';
+import {
+  ArrowRight,
+  Heart,
+  ShieldCheck,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  Phone,
+  FolderOpen,
+  ClipboardText,
+} from '@phosphor-icons/react';
+
+const IconMap = {
+  Heart,
+  ShieldCheck,
+  GraduationCap,
+  Briefcase,
+  FirstAid,
+  ChartLineUp,
+  Handshake,
+  UsersThree,
+  Lightbulb,
+  Phone,
+  FolderOpen,
+  ClipboardText,
+};
 
 export default function ProductCard({ product, variant = 'cream', index = 0 }) {
-  const Icon = Icons[product.icon] || Icons.Shield;
+  const Icon = IconMap[product.icon] || ShieldCheck;
   const isDark = variant === 'navy';
 
   return (
