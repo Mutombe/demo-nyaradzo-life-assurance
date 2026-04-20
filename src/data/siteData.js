@@ -62,8 +62,8 @@ export const hero = {
   primaryCta: { label: 'Get a Quote', to: '/quote' },
   secondaryCta: { label: 'Find an Advisor', to: '/advisors' },
   image:
-    'https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?auto=format&fit=crop&w=1600&q=80',
-  imageAlt: 'Zimbabwean grandmother with grandchildren, warm afternoon light',
+    'https://images.unsplash.com/photo-1741940365437-e55b919a89d3?auto=format&fit=crop&w=1600&q=80',
+  imageAlt: 'African mother holding her young daughter face-to-face, sharing a warm smile',
   trustStrip: [
     { k: '24+', v: 'Years of service' },
     { k: '450K+', v: 'Policies held' },
