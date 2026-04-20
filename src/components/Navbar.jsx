@@ -77,7 +77,7 @@ export default function Navbar() {
               alt={business.name}
               className="h-11 w-11 shrink-0"
               loading="eager"
-            />
+             onError={e => { e.currentTarget.style.display = 'none'; }} />
             <div className="min-w-0">
               <div className="font-display text-[20px] sm:text-[22px] leading-none tracking-tight text-navy-700 truncate">
                 {business.shortName}
@@ -159,7 +159,7 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between px-6 h-20 border-b border-cream-200">
             <div className="flex items-center gap-3">
-              <img src={business.logo} alt="" className="h-9 w-9" />
+              <img src={business.logo} alt="" className="h-9 w-9"  onError={e => { e.currentTarget.style.display = 'none'; }} />
               <span className="font-display text-lg text-navy-700">
                 {business.shortName}
               </span>

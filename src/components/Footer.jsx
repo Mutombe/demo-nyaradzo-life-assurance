@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 lg:col-span-4 space-y-5">
             <Link to="/" className="flex items-center gap-3">
-              <img src={business.logo} alt={business.name} className="h-11 w-11" />
+              <img src={business.logo} alt={business.name} className="h-11 w-11"  onError={e => { e.currentTarget.style.display = 'none'; }} />
               <div>
                 <div className="font-display text-2xl text-cream-50 leading-none">
                   {business.shortName}

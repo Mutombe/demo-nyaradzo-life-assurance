@@ -202,7 +202,7 @@ export const products = [
     longBlurb:
       'A Retirement Annuity puts discipline behind your future. Contribute what you can, receive tax relief on every dollar, and step into retirement with a monthly pension or a one-third lump sum plus income — the choice is yours at 55.',
     hero:
-      'https://images.unsplash.com/photo-1552072804-14b17b39b0c6?auto=format&fit=crop&w=1600&q=80',
+      'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1600&q=80',
     accent: 'navy',
     coverage: [
       'Tax-deductible contributions up to the statutory ceiling',

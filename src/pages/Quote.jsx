@@ -30,7 +30,7 @@ export default function Quote() {
         eyebrow="Get a Quote"
         title="A quote, in your own time."
         subtitle="Share a few details and an advisor will come back with a plan shaped around your life — not the other way around."
-        image="https://images.unsplash.com/photo-1552072804-14b17b39b0c6?auto=format&fit=crop&w=1600&q=80"
+        image="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1600&q=80"
         breadcrumbs={[{ label: 'Get a Quote' }]}
       />
 
